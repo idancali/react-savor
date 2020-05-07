@@ -1,3 +1,6 @@
+const register = require('@babel/register').default
+register({ extensions: ['.js', '.jsx', '.ts', '.tsx'] })
+
 const { JSDOM } = require('jsdom')
 
 const jsdom = new JSDOM('<!doctype html><html><body></body></html>')
